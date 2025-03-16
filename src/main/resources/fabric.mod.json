@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "better_bosses",
+	"version": "${version}",
+	"name": "Better Bosses",
+	"description": "This is a mod that add more bosses because 2 isn't enough.",
+	"authors": [
+		"Fishgethirsty"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/better_bosses/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.fishgethirsty.better_bosses.BetterBosses"
+		],
+		"client": [
+			"net.fishgethirsty.better_bosses.BetterBossesClient"
+		],
+		"fabric-datagen": [
+			"net.fishgethirsty.better_bosses.BetterBossesDataGenerator"
+		]
+	},
+	"mixins": [
+		"better_bosses.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
