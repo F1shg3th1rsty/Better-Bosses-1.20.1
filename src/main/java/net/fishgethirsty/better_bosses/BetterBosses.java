@@ -2,6 +2,8 @@ package net.fishgethirsty.better_bosses;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fishgethirsty.better_bosses.item.ModItemGroups;
+import net.fishgethirsty.better_bosses.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,5 +15,7 @@ public class BetterBosses implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
+		ModItems.registerModItems();
+		ModItemGroups.registerItemGroups();
 	}
 }
