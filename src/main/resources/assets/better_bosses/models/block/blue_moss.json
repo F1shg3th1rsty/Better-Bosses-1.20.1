@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/template_glow_lichen",
-  "textures": {
-    "all": "better_bosses:block/blue_moss"
-  }
-}
