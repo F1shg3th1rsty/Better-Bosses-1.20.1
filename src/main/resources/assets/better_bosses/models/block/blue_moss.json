@@ -2,7 +2,8 @@
   "ambientocclusion": false,
   "textures": {
     "particle": "better_bosses:block/blue_moss",
-    "blue_moss": "better_bosses:block/blue_moss"
+    "blue_moss": "better_bosses:block/blue_moss",
+    "emissive": "better_bosses:block/blue_moss_emissive"
   },
   "elements": [
     {   "from": [ 0, 0, 0.1 ],

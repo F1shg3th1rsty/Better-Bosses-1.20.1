@@ -9,6 +9,6 @@ public class BetterBossesClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BLUE_MOSS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BLUE_MOSS, RenderLayer.getTranslucent());
     }
 }
