@@ -15,7 +15,10 @@ public class ModItemGroups {
     public static final ItemGroup BETTER_BOSSES = Registry.register(Registries.ITEM_GROUP, new Identifier(BetterBosses.MOD_ID, "better_bosses"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.better_bosses")).icon(() -> new ItemStack(ModItems.WORM_FLESH)).entries((displayContext, entries) -> {
                 entries.add(ModItems.WORM_FLESH);
+
                 entries.add(ModBlocks.BLUE_MOSS);
+                entries.add(ModBlocks.GREEN_MOSS);
+                entries.add(ModBlocks.ORANGE_MOSS);
 
             }).build());
 

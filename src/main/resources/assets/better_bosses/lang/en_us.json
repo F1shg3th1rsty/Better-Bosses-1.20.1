@@ -2,6 +2,8 @@
   "item.better_bosses.worm_flesh" : "Worm Flesh",
 
   "block.better_bosses.blue_moss": "Blue Moss",
+  "block.better_bosses.green_moss": "Green Moss",
+  "block.better_bosses.orange_moss": "Orange Moss",
 
   "itemgroup.better_bosses": "Better Bosses"
 }

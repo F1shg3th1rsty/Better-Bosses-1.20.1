@@ -18,9 +18,30 @@ import net.minecraft.world.BlockView;
 public class ModBlocks {
 
     public static final Block BLUE_MOSS = registerBlock("blue_moss",
-
             new Moss(FabricBlockSettings.create()
                     .mapColor(MapColor.BLUE)
+                    .replaceable()
+                    .noCollision()
+                    .strength(0.2F)
+                    .sounds(BlockSoundGroup.SCULK_VEIN)
+                    .emissiveLighting(ModBlocks::always)
+                    .luminance(state -> 10)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
+
+    public static final Block GREEN_MOSS = registerBlock("green_moss",
+            new Moss(FabricBlockSettings.create()
+                    .mapColor(MapColor.EMERALD_GREEN)
+                    .replaceable()
+                    .noCollision()
+                    .strength(0.2F)
+                    .sounds(BlockSoundGroup.SCULK_VEIN)
+                    .emissiveLighting(ModBlocks::always)
+                    .luminance(state -> 10)
+                    .pistonBehavior(PistonBehavior.DESTROY)));
+
+    public static final Block ORANGE_MOSS = registerBlock("orange_moss",
+            new Moss(FabricBlockSettings.create()
+                    .mapColor(MapColor.ORANGE)
                     .replaceable()
                     .noCollision()
                     .strength(0.2F)
